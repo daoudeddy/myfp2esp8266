@@ -1,0 +1,9 @@
+<!doctype html><html lang="en-US"><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><title>myFP2ESP8266 ALPACA SERVER</title><meta name="viewport" content="width=device-width, initial-scale=1"></head><body style="font-family:sans-serif; font-size:12px;" text="%TXC%" bgcolor="%BKC%"><p style="font-size:18px; color: #%HEC%"><strong>%DVN%</strong></p><p></p><p style="font-size:16px; color: #%TIC%"><strong>ALPACA SERVER</strong><p style="font-size:14px; color: #%STC%"><strong>About</strong></p>
+
+<p>MOVE TO POSITION</p>
+<form action="192.168.2.253:4040/api/v1/focuser/0/move?Position=3456&ClientID=22&ClientTransactionID=33" method="PUT"><input type="text" name="position" style="height: 1.3em; width: 5.5em" value="3456"> &nbsp; <input type="submit" style="height: 1.6em; width: 7.5em" value="MOVE"></form>
+
+
+<p><form action="/setup/v1/focuser/0/setup" method="GET"><input type="submit" style="height: 1.6em; width: 7.5em" value="Setup page"></form><p></p><hr><p style="font-size:12px; color: #%FTR%">%NAM%, Ver: %VER%, Heap: <span id="HEA">%HEA%</span>, SUT: <span id="SUT">%SUT%</span><script>function getheap() { var xhttp = new XMLHttpRequest(); xhttp.onreadystatechange = function() { if (this.readyState == 4 && this.status == 200) { document.getElementById("HEA").innerHTML = this.responseText; } }; xhttp.open("GET", "/he", true); xhttp.send(); } setInterval(function(){ getheap(); }, 4791); </script><script>function getsut() { var xhttp = new XMLHttpRequest(); xhttp.onreadystatechange = function() { if (this.readyState == 4 && this.status == 200) { document.getElementById("SUT").innerHTML = this.responseText; } }; xhttp.open("GET", "/su", true); xhttp.send(); } setInterval(function(){ getsut(); }, 5821); </script></body></html>
+
+

@@ -1,0 +1,16 @@
+myFP2ELibs Libraries
+
+Import these into the Arduino IDE first. Use the Sketch Library Add ZIP Library to import them.
+
+OLED Displays
+There are two types of displays (TEXT and GRAPHICS). OLED's can also have two different Driver Chip types (SSD1306 or SSH1106) 
+
+ OLED_TEXT requires libray myOLED
+
+ OLED_GRAPHIC requires library esp8266-oled-ssd1306
+
+
+For the Graphics OLED Library
+	esp8266-oled-ssd1306-master.zip
+	download from https://github.com/ThingPulse/esp8266-oled-ssd1306
+	v4.0.0
